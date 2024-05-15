@@ -56,7 +56,7 @@ function Home() {
             <motion.a variants={textVariants} href="#Contact">
               Contact Me
             </motion.a>
-            <motion.a href="/Fuad Babayev.pdf" donwload variants={textVariants}>Download CV</motion.a>
+            <motion.a href="/Fuad Babayev.pdf" donwload="true" variants={textVariants} target="_blank">Download CV</motion.a>
           </motion.div>
           <motion.img
             variants={textVariants}
