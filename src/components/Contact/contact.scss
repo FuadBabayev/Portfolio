@@ -1,0 +1,349 @@
+.contact {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .textContainer {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            font-size: 88px;
+            line-height: 88px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        span {
+            font-size: 18px;
+            font-weight: 300;
+        }
+    }
+
+    .formContainer {
+        width: 50%;
+        position: relative;
+
+        .phoneSvg {
+            stroke: orange;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin: 0 auto;
+            z-index: -1;
+
+            svg {
+                width: 450px;
+                height: 450px;
+            }
+        }
+
+        form {
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                border-radius: 5px;
+            }
+
+            textarea {
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                border-radius: 5px;
+                resize: none;
+            }
+
+            button {
+                padding: 20px;
+                border: none;
+                background-color: orange;
+                cursor: pointer;
+                font-weight: 500;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .contact {
+        width: 80%;
+        gap: 45px;
+
+        .textContainer {
+            gap: 18px;
+
+            h1 {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            span {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+
+        .formContainer {
+
+            .phoneSvg {
+                svg {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+
+            form {
+                gap: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .contact {
+        width: 90%;
+        gap: 40px;
+
+        .textContainer {
+            gap: 17px;
+
+            h1 {
+                font-size: 70px;
+                line-height: 68px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            span {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+
+        .formContainer {
+            width: 50%;
+            position: relative;
+
+            .phoneSvg {
+
+                svg {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+
+            form {
+                gap: 16px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .contact {
+        height: 100vh;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 35px 0;
+
+        .textContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            h1 {
+                font-size: 75px;
+                line-height: 75px;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 24px;
+                text-align: center;
+
+            }
+
+            span {
+                display: block;
+                text-align: center;
+
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+
+        .formContainer {
+            width: 80%;
+            position: relative;
+            padding-bottom: 0;
+
+            .phoneSvg {
+                stroke: orange;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                margin: 0 auto;
+                z-index: -1;
+
+                svg {
+                    width: 320px;
+                    height: 320px;
+                }
+            }
+
+            form {
+
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                input,
+                textarea {
+                    padding: 16px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    padding: 16px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    border-radius: 5px;
+                    resize: none;
+                    height: 160px;
+                }
+
+                button {
+                    padding: 20px;
+                    border: none;
+                    background-color: orange;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .contact {
+        height: 100vh;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 50px 0;
+
+        .textContainer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            h1 {
+                font-size: 50px;
+                line-height: 40px;
+                width: 100%;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 22px;
+                text-align: center;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+
+        .formContainer {
+            width: 80%;
+            position: relative;
+            padding-bottom: 0;
+
+            .phoneSvg {
+                padding-top: 50px;
+
+                svg {
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+
+            form {
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input,
+                textarea {
+                    padding: 14px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    border-radius: 5px;
+                }
+
+                textarea {
+                    padding: 14px;
+                    background-color: transparent;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    border-radius: 5px;
+                    resize: none;
+                    height: 100px;
+                }
+
+                button {
+                    padding: 16px;
+                    border: none;
+                    background-color: orange;
+                    cursor: pointer;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    color: black;
+                }
+            }
+        }
+    }
+}

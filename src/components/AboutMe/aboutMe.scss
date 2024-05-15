@@ -1,0 +1,602 @@
+.aboutme {
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .textContainer {
+        padding: 15px 0;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            font-weight: 200;
+            font-size: 20px;
+            color: gray;
+            text-align: right;
+        }
+
+        hr {
+            width: 350px;
+            border: none;
+            border-top: 0.5px solid gray;
+        }
+    }
+
+    .titleContainer {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            img {
+                width: 210px;
+                height: 70px;
+                border-radius: 40px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-size: 60px;
+                font-weight: 100;
+            }
+
+            button {
+                width: 210px;
+                height: 70px;
+                border-radius: 40px;
+                background-color: orange;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+                color: black;
+            }
+        }
+    }
+
+    .profile {
+        // background: red;
+        height: 300px;
+        width: 80%;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin: 30px auto;
+
+        .about {
+            width: 50%;
+            padding: 35px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+
+            p {
+                text-align: justify;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+
+        .skills {
+            width: 50%;
+            height: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            .skills-data {
+                width: calc((100% - 1 * 10px) / 2);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                padding: 8px 16px;
+                border-radius: 10px;
+                overflow: hidden;
+                border: 1px solid #fff;
+
+                .skills-logo-name {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    .react-icons {
+                        font-size: 25px;
+
+                        &.html {
+                            color: #dd4b25;
+                        }
+
+                        &.css {
+                            color: #254bdd;
+                        }
+
+                        &.sass {
+                            color: #c66394;
+                        }
+
+                        &.tailwind {
+                            color: #45a8ac;
+                        }
+
+                        &.js {
+                            color: #efd81d;
+                        }
+
+                        &.ts {
+                            color: #2f74c0;
+                        }
+
+                        &.react {
+                            color: #00d5f7;
+                        }
+
+                        &.node {
+                            color: #7cb700;
+                        }
+
+                        &.express {
+                            color: #fff;
+                        }
+
+                        &.mongo {
+                            color: #4da53f;
+                        }
+                    }
+                }
+
+                .skills-bar {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 5px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    &.skills-html {
+                        width: 95%;
+                        background-color: #dd4b25;
+                    }
+
+                    &.skills-css {
+                        width: 95%;
+                        background-color: #254bdd;
+                    }
+
+                    &.skills-sass {
+                        width: 95%;
+                        background-color: #c66394;
+                    }
+
+                    &.skills-tailwind {
+                        width: 90%;
+                        background-color: #45a8ac;
+                    }
+
+                    &.skills-js {
+                        width: 80%;
+                        background-color: #efd81d;
+                    }
+
+                    &.skills-ts {
+                        width: 80%;
+                        background-color: #2f74c0;
+                    }
+
+                    &.skills-react {
+                        width: 80%;
+                        background-color: #00d5f7;
+                    }
+
+                    &.skills-node {
+                        width: 70%;
+                        background-color: #7cb700;
+                    }
+
+                    &.skills-express {
+                        width: 75%;
+                        background-color: #fff;
+                    }
+
+                    &.skills-mongo {
+                        width: 90%;
+                        background-color: #4da53f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .aboutme {
+
+        .textContainer {
+            padding: 12px 0;
+
+            p {
+                font-size: 18px;
+            }
+
+            hr {
+                width: 270px;
+            }
+        }
+
+        .titleContainer {
+            margin: 18px auto;
+
+            .title {
+                display: flex;
+                align-items: center;
+                gap: 22px;
+
+                img {
+                    width: 180px;
+                    height: 60px;
+                    border-radius: 30px;
+                }
+
+                h1 {
+                    font-size: 54px;
+                    font-weight: 100;
+                }
+
+                button {
+                    width: 180px;
+                    height: 60px;
+                    border-radius: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .profile {
+            height: 300px;
+            width: 80%;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin: 30px auto;
+
+            .about {
+                width: 45%;
+                padding: 20px;
+                border: 1px solid #fff;
+                border-radius: 10px;
+
+                p {
+                    text-align: justify;
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }
+
+            .skills {
+                width: 55%;
+                height: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+
+                .skills-data {
+                    width: calc((100% - 1 * 10px) / 2);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    padding: 8px 13px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    border: 1px solid #fff;
+
+                    .skills-logo-name {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+
+                        .react-icons {
+                            font-size: 25px;
+                        }
+                    }
+
+                    .skills-bar {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 5px;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .aboutme {
+        height: 100%;
+
+        .textContainer {
+            padding: 10px 0;
+            gap: 20px;
+
+            p {
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 15px;
+            }
+
+            hr {
+                width: 170px;
+            }
+        }
+
+        .titleContainer {
+            margin: 14px auto;
+
+            .title {
+                gap: 20px;
+
+                img {
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                }
+
+                h1 {
+                    font-size: 50px;
+                    font-weight: 100;
+                }
+
+                button {
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 30px;
+                    background-color: orange;
+                    border: none;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .profile {
+            // background: red;
+            width: 80%;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin: 20px auto;
+
+            .about {
+                display: none;
+            }
+
+            .skills {
+                width: 100%;
+                height: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .aboutme {
+        height: 100%;
+
+        .textContainer {
+            padding: 10px 0;
+            gap: 16px;
+
+            p {
+                font-weight: 200;
+                font-size: 14px;
+                line-height: 15px;
+            }
+
+            hr {
+                width: 150px;
+            }
+        }
+
+        .titleContainer {
+            margin: 14px auto;
+
+            .title {
+                gap: 20px;
+
+                img {
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                }
+
+                h1 {
+                    font-size: 50px;
+                    font-weight: 100;
+                }
+
+                button {
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 30px;
+                    background-color: orange;
+                    border: none;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .profile {
+            width: 90%;
+
+            .about {
+                display: none;
+            }
+
+            .skills {
+                width: 100%;
+                gap: 10px;
+
+                .skills-data {
+                    padding: 8px 12px;
+
+                    .skills-logo-name {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .aboutme {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .textContainer {
+            padding: 10px 0;
+            gap: 12px;
+
+            p {
+                font-weight: 200;
+                font-size: 10px;
+                line-height: 10px;
+            }
+
+            hr {
+                width: 90px;
+            }
+        }
+
+        .titleContainer {
+            margin: 12px auto;
+
+            .title {
+                gap: 10px;
+
+                img {
+                    width: 90px;
+                    height: 30px;
+                    border-radius: 20px;
+                    object-fit: cover;
+                }
+
+                h1 {
+                    font-size: 26px;
+                    font-weight: 100;
+                }
+
+                button {
+                    width: 90px;
+                    height: 30px;
+                    border-radius: 20px;
+                    background-color: orange;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .profile {
+            height: 60%;
+            width: 90%;
+            margin: 1px auto;
+            padding-top: 50px;
+            display: block;
+
+            .about {
+                display: none;
+            }
+
+            .skills {
+                width: 100%;
+                // height: 300px;
+                display: flex;
+                flex-wrap: nowrap;
+                height: 100%;
+                flex-direction: column;
+                gap: 10px;
+
+                .skills-data {
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    padding: 16px 15px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    border: 1px solid #fff;
+                    margin: 0 auto;
+
+                    .skills-logo-name {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+
+                        .react-icons {
+                            font-size: 22px;
+                        }
+                    }
+
+                    .skills-bar {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 5px;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
