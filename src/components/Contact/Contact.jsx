@@ -69,15 +69,15 @@ const Contact = () => {
           <motion.h1 variants={variants}>Let's work together</motion.h1>
           <motion.div className="item" variants={variants}>
             <h2>Mail</h2>
-            <span>babayevffuad@gmail.com</span>
+            <a href="mailto:babayevffuad@gmail.com">babayevffuad@gmail.com</a>
           </motion.div>
           <motion.div className="item" variants={variants}>
             <h2>Address</h2>
-            <span>Baku / Azerbaijan</span>
+            <a href="https://maps.app.goo.gl/g4ghYeLhRERfsUN77" target="_blank">Baku / Azerbaijan</a>
           </motion.div>
           <motion.div className="item" variants={variants}>
             <h2>Phone</h2>
-            <span>+994 50 743 1951</span>
+            <a href="https://wa.me/994507431951" target="_blank">+994 50 743 1951</a>
           </motion.div>
         </motion.div>
         <div className="formContainer">

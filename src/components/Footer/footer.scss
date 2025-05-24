@@ -10,3 +10,13 @@
         color: #fff;
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        padding: 2rem 12px;
+        p {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
