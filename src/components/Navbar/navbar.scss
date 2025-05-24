@@ -1,0 +1,119 @@
+.navbar {
+    height: 100px;
+
+    .wrapper {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        span {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .social {
+            display: flex;
+            gap: 20px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+    .navbar {
+
+        .wrapper {
+            width: 78%;
+
+            span {
+                font-size: 28px;
+            }
+
+            .social {
+                gap: 18px;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    .navbar {
+
+        .wrapper {
+            width: 76%;
+
+            span {
+                font-size: 26px;
+            }
+
+            .social {
+                gap: 16px;
+
+                img {
+                    width: 26px;
+                    height: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    .navbar {
+
+        .wrapper {
+            width: 70%;
+            margin-left: 120px;
+
+            span {
+                font-size: 24px;
+            }
+
+            .social {
+                display: flex;
+                gap: 14px;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+
+        .wrapper {
+            width: 70%;
+            margin-left: 85px;
+
+
+            span {
+                font-size: 22px;
+            }
+
+            .social {
+                gap: 8px;
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
