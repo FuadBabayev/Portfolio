@@ -53,12 +53,12 @@ function Home() {
           <motion.h1 variants={textVariants}>
             Frontend <br /> Web Developer
           </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
+          {/* <motion.div variants={textVariants} className="buttons">
             <motion.a variants={textVariants} href="#Contact">
               Contact Me
             </motion.a>
             <motion.a href="/Fuad Babayev.pdf" donwload="true" variants={textVariants} target="_blank">Download CV</motion.a>
-          </motion.div>
+          </motion.div> */}
           <motion.img
             variants={textVariants}
             src="/scroll.png"
