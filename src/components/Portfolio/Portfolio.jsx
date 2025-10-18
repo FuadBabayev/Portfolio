@@ -3,6 +3,20 @@ import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
+    {
+    id: 9,
+    title: "Proweb",
+    img: "/proweb.jpg",
+    desc: 'We create applications and websites',
+    href: "https://proweb.az/",
+  },
+    {
+    id: 10,
+    title: "QRGate",
+    img: "/qrgate.jpg",
+    desc: 'Supervise employees’ attendance and guide the workflow.',
+    href: "https://qrgate.az/",
+  },
   {
     id: 11,
     title: "Hellper",
